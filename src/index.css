@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+  
+  line-height: 1.7;
+  background-image: url(../src/Assets/bg-texture.png);
+
+
+ 
+
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+}
+
+:root{
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant:rgba(77, 181,255,0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 0.6)
+
+  --container-width-md: 86%;
+  --container-width-sm: 90%
+  --container-width-lg: 75%;
+  --transition-: all 400 ease;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* ----GENERAL STYLES */
+
+.container{
+  width: var(--container-width-lg);
+  margin: auto;
+  width: 85%;
+  max-width: 1920px;
+
+}
+
+h1,h2,h3,h4,h5{
+  
+  font-weight: 500;
+
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+section{
+  margin-top: 8rem;
+  height: 100vh;
+}
+
+section > h2, section> h5{
+ text-align: center;
+ color: var(--color-white);
+}
+
+section>h2{
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.text-light{
+  color: var(--color-light);
+
+}
+
+a{
+  color: var(--color-primary);
+  transition:var(--transition);
+}
+
+
+a:hover{
+  color: var(--color-white);
+}
+
+.btn{
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  padding: 0.7rem;
+}
+
+.btn:hover{
+  background: var(--color-white) ;
+  color: var(--color-bg);
+  border: transparent;
+}
+
+.btn-primary{
+  background:var(--color-primary) ;
+  color: var(--color-bg);
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  margin-top: 2rem;
+  max-width: 1920px;
+}
+
+/* .........Media queries (small devices) */
+@media screen  and ( max-width: 600px){
+  .container{
+    width: var(--container-width-ms);
+  }
+  
+  section > h1{
+    margin-top: 6rem;
+  }
+
+}
+
+/*Media queries (small devices)  */
+
+@media screen and ( max-width: 1024px) {
+  .container{
+    width: var(--container-width-md);
+  }
+  section{
+    margin-top: 6rem;
+  }
+}
